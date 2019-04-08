@@ -8,4 +8,13 @@ class SportsTeam
       @coach = coach
     end
 
-end      
+
+    def add_player_to_player_array(new_player)
+      @players.push(new_player)
+    end
+
+    def is_player_in_team(player)
+      @players.include?(player)
+    end
+
+end
